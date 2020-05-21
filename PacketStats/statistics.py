@@ -45,8 +45,8 @@ def get_range_of_data(percentage_list, move=0, percentage=20):
 # Generating percentage for each row
 def calculate_percentage(series):
     result = sorted(list(series), key=lambda x: x[1], reverse=True)
-    sum = (sum(item[1] for item in result))
-    resultPercentage = [(i[0], 100.0 * i[1] / sum) for i in result]
+    sum_list = (sum(item[1] for item in result))
+    resultPercentage = [(i[0], 100.0 * i[1] / sum_list) for i in result]
     return resultPercentage
 
 
@@ -55,7 +55,8 @@ def statistics(f_name, header_names):
     dataset = pd.read_csv(f_name, delimiter='\t')
 
     # Delete time
-    if len(header_names) > 4: header_names.pop(0)
+    if len(header_names) > 4:
+        header_names.pop(0)
 
     # Prepare data formats
     dataset = dataset.astype({"length": int, "port-source": int, "port-dest": int})
