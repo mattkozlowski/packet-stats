@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='PacketStats',
-      version='1.2',
+      version='1.4',
       description='Package to work with pcap files and converting them to txt,csv and then creating stats',
       url='http://github.com/mattkozlowski/packet-stats',
       author='Matt Kozlowski',
