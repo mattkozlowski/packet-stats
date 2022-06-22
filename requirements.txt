@@ -8,7 +8,7 @@ keyring==21.2.1
 mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.3.0
-numpy==1.18.1
+numpy==1.22.0
 packaging==20.4
 -e git+https://github.com/mattkozlowski/packet-stats.git@00c15ef368b366eb917d9b8b26ea8327f6e1a614#egg=PacketStats
 pandas==1.0.3
